@@ -1,5 +1,5 @@
 A fun little math learning game for kids. Created while doing homework with my young ones.
-written in c# .net core 10 / compile with isual studio 
+Written in c# .net core 10 / compile with visual studio 
 
 
 Goal: Solve random math questions to advance your unicorn to the castle and reveal puzzle tiles.
