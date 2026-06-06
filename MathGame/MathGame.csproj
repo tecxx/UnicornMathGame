@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MathGame</RootNamespace>
+    <AssemblyName>MathGame</AssemblyName>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="icon.ico"/>
+  </ItemGroup>
+
+  <!-- Animal puzzle images — drop horse/dolphin/tiger/dragon.(png|bmp|jpg) here -->
+  <ItemGroup>
+    <Resource Include="Assets\**\*" Condition="Exists('Assets')"/>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.claude
+/.vs
+/MathGame/bin
+/MathGame/obj
+/MathGame/publish
+/MEMORY.md
+/MathGame/MathGame.csproj.user
+/MathGame/Properties/PublishProfiles/FolderProfile.pubxml.user

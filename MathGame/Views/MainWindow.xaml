@@ -1,0 +1,22 @@
+<Window x:Class="MathGame.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:MathGame.ViewModels"
+        xmlns:views="clr-namespace:MathGame.Views"
+        Title="Math Adventure 🎓" Height="900" Width="1340"
+        MinHeight="700" MinWidth="1100"
+        WindowStartupLocation="CenterScreen"
+        Background="#F0E8FF"
+        Icon="/icon.ico">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:OperationSelectViewModel}">
+            <views:OperationSelectView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:GameViewModel}">
+            <views:GameView />
+        </DataTemplate>
+    </Window.Resources>
+
+    <ContentControl Content="{Binding CurrentView}" />
+</Window>
